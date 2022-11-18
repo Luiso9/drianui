@@ -1,0 +1,6 @@
+
+@layer base{ 
+	* {
+	@apply bg-[#2d2926ff] !important;
+	}
+}

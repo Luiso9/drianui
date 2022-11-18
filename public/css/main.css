@@ -1,0 +1,11 @@
+:root {
+	--primary: #2D142C;
+	--secondarY: #510A32;
+	--ketigas: #801336;
+	--keempat: #C72C41;
+	--kelima: #EE4540;
+}
+
+@layer components {
+	
+}
