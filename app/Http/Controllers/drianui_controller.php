@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 class drianui_controller extends Controller
 {
-    public function index()
+    public function projects()
     {
     	$table=\App\Models\drianui_model::all();
     	return view('/project', [

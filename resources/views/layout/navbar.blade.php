@@ -24,13 +24,41 @@
 						@section('navbar')
 						
 						@show
-						<div class="navbar-end avatar">
-							<div class="w-10 rounded-full outline outline-2 outline-[#E94B3CFF]">
-								<img src="img/ico.gif" loading="lazy"/>
+
+				@auth
+				<div class="flex justify-end">
+					<div class="dropdown dropdown-end">
+						<label tabindex="0" class="btn btn-ghost btn-circle avatar">
+							<div class="w-10 rounded-full">
+								<img src="{{auth() -> user() -> avatar}}" loading="lazy"/>
+							</div>
+						</label>
+						<ul tabindex="0" class="mt-3 p-2 shadow menu menu-compact dropdown-content bg-base-100 rounded-box w-52">
+							<li>
+								<a class="">
+									{{auth() -> user() -> username}}#{{auth() -> user() -> discriminator}}
+								</a>
+							</li>
+							<li><a href="{{route("logout")}}">Logout</a></li>
+						</ul>
+						@else
+						<div class="navbar-end">
+							<div class="dropdown dropdown-end">
+								<label tabindex="0" class="btn btn-ghost btn-circle avatar">
+									<div class="w-10 rounded-full">
+										<img src="img/ico.gif" loading="lazy"/>
+									</div>
+								</label>
+								<ul tabindex="0" class="mt-3 p-2 shadow menu dropdown-content bg-base-100 rounded-box w-52">
+									<li>
+										<a class="underline" href="https://discord.com/oauth2/authorize?client_id={{env("DISCORD_CLIENT_ID")}}&redirect_uri={{env("DISCORD_REDIRECT_URI")}}&response_type=code&scope=identify%20email">Login</a>
+									</li>
+								</ul>
 							</div>
 						</div>
 					</div>
 				</div>
+				@endauth
 			</div>
 
 		<div>
