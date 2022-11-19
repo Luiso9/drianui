@@ -32,14 +32,7 @@
                         </span> <br> Tanpa Daya Tarik</h1>
                         <p class="text-xl absolute left-[9.5rem] bottom-[21rem]" style="font-family: 'Barlow Condensed', sans-serif;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit officiis, <br> soluta tempore porro aliquam? Odio, facere delectus quis, saepe labore neque cupiditate <br> distinctio minima eius! Quidem optio pariatur, commodi doloremque.</p>
 
-                        <div class="group bg-primary">
-                        <button class="z-[1] btn btn-lg text-xl  bg-focus group-hover:bg-[#E94B3CFF] group-hover:scale-105 group-hover:text-black uppercase rounded-md absolute left-[9.5rem] bottom-[12rem]">
-                            <a href="/about" class="relative text-white">Tentang</a>
-                        </button>
-
-                        <div class="z-[0] h-[65px] w-[140px] bg-[#E94B3CFF] absolute left-[10.5rem] bottom-[11rem] group-hover:bg-[#2d2926ff] group-hover:scale-105 rounded-md"></div>
-                        </div>
-
+                        <div class="group bg-primary" />
                         <div class="absolute bottom-0 right-0">
                             <figure>
                                 <img src="img/azur.png" alt="" width="600" height="600">
@@ -49,5 +42,26 @@
                 </div>
             </div>
         </div>
-        
+
+        <!-- framework -->
+        <div class="container mx-auto px-4 bg-red-200">
+          <div class="text-center">
+            <div class="text-2xl antialiased uppercase font-bold">
+              <h2>FRAMEWORK THAT I USE</h2>
+            </div>
+            <div class="columns-3">
+              <div class="card">
+                <div class="card-body">
+                  <img src="" alt="">
+                  <h3 class="card-title">Title</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                      exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
     @endsection

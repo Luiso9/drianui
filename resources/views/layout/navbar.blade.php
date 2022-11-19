@@ -14,7 +14,7 @@
         <link rel="icon" type="image/x-icon" href="img/profile.png">
 	</head>
 	<body>
-		
+
 			<div class="container-fluid">
 				<div class="container mx-auto px-4">
 					<div class="navbar bg-transparent sticky shadow-xl">
@@ -22,43 +22,15 @@
 							<a href="/" class="btn btn-ghost rounded-md text-xl capitalize group-hover:text-[#E94B3CFF]">Drian<span class="text-[#E94B3CFF] group-hover:text-black">UI</span></a>
 						</div>
 						@section('navbar')
-						
-						@show
 
-				@auth
-				<div class="flex justify-end">
-					<div class="dropdown dropdown-end">
-						<label tabindex="0" class="btn btn-ghost btn-circle avatar">
+						@show
+						<div class="navbar-end avatar">
 							<div class="w-10 rounded-full">
-								<img src="{{auth() -> user() -> avatar}}" loading="lazy"/>
-							</div>
-						</label>
-						<ul tabindex="0" class="mt-3 p-2 shadow menu menu-compact dropdown-content bg-base-100 rounded-box w-52">
-							<li>
-								<a class="">
-									{{auth() -> user() -> username}}#{{auth() -> user() -> discriminator}}
-								</a>
-							</li>
-							<li><a href="{{route("logout")}}">Logout</a></li>
-						</ul>
-						@else
-						<div class="navbar-end">
-							<div class="dropdown dropdown-end">
-								<label tabindex="0" class="btn btn-ghost btn-circle avatar">
-									<div class="w-10 rounded-full">
-										<img src="img/ico.gif" loading="lazy"/>
-									</div>
-								</label>
-								<ul tabindex="0" class="mt-3 p-2 shadow menu dropdown-content bg-base-100 rounded-box w-52">
-									<li>
-										<a class="underline" href="https://discord.com/oauth2/authorize?client_id={{env("DISCORD_CLIENT_ID")}}&redirect_uri={{env("DISCORD_REDIRECT_URI")}}&response_type=code&scope=identify%20email">Login</a>
-									</li>
-								</ul>
+								<img src="img/ico.gif" alt="" loading="lazy">
 							</div>
 						</div>
 					</div>
 				</div>
-				@endauth
 			</div>
 
 		<div>
