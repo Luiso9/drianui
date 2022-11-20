@@ -2,17 +2,14 @@
 module.exports = {
   content: [
   	"./resources/**/*.blade.php",
-    "./resources/**/*.js",
+    "./resources/**/*.{js,css}",
     "./resources/**/*.vue",
   ],
   theme: {
-      fontFamily: {
-        'pd': ['"Playfair Display"', 'sans-serif'],
-        'secular': ['Secular One', 'sans-serif'],
-      }
-  }
+    extend: {},
+  },
   plugins: [
-    require("daisyui") 
+    require("daisyui")
   ],
-  
+
 }

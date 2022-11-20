@@ -15,7 +15,6 @@
 	        </div>
         @stop
 
-
 		<div class="container mx-auto absolute top-[5rem] right-[3rem]">
 			<div class="columns-3">
 				<div class="grid-row-2 gap-4">

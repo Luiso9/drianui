@@ -12,7 +12,13 @@
         <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@600&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200&display=swap" rel="stylesheet">
         <link rel="icon" type="image/x-icon" href="img/profile.png">
-	</head>
+        <style type="text/tailwindcss">
+        	* {
+        	
+        }
+        </style>
+
+    </head>
 	<body>
 
 			<div class="container-fluid">
@@ -37,7 +43,11 @@
 			@yield('container')
 		</div>
 
+		<script src="/js/app.js"></script>
 		<script src="https://cdn.tailwindcss.com"></script>
 		<script src="https://kit.fontawesome.com/60f4a26759.js" crossorigin="anonymous"></script>
+		@env('local')
+			 <script src="http://localhost:35729/livereload.js"></script>
+	 	@endenv
 	</body>
 </html>
